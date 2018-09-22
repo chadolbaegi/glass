@@ -1,0 +1,157 @@
+:root {
+    --a:#e91e63;
+	--b:#00bcd4;
+	--c:#8bc34a;
+	--d:#ffc107;
+	--e:#9c27b0;
+}
+
+html, body {
+    background-image:url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:default;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+ul, li {
+    list-style-image: none;
+    padding:0;
+    display: inline-block;
+}
+
+ul {
+    margin:0;
+}
+
+#load {
+    height:100%;
+    width:100%;
+    background:#303030;
+    position: absolute;
+    z-index:9000;
+}
+
+#template, #link-template {
+    display:none;
+}
+
+#search {
+    align-self:center;
+    margin-bottom:10px;
+}
+#search input {
+    padding:10px 20px 10px 10px;
+    background:transparent;
+    border:1px solid;
+    border-color:rgba(0,0,0,0.15);
+    color:#808080;
+    transition:300ms all;
+    font-size:0.9em;
+    border-radius: 40px;
+    height: 40px;
+    padding:5px 20px;
+}
+
+#search input::-moz-placeholder, #search input::-webkit-input-placeholder {
+    color:#ccc;
+}
+
+#search input:focus {
+    color:#606060 !important;
+    border-color:#808080;
+    transition:300ms all;
+}
+
+#center {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:500px;
+    height:400px;
+    background:inherit;
+    background-attachment:fixed;
+    overflow:hidden !important;
+    box-shadow:0 0 20px #505050;
+    border-radius:20px;
+}
+
+#center:before {
+ content:'';
+ position: absolute;
+ background:inherit; 
+ filter: blur(20px);
+ height:inherit;
+ width:inherit;
+ box-shadow:inset 0 0 3000px rgba(255,255,255,0.5);
+}
+
+#inner {
+    z-index:5000;
+    display:flex;
+    flex-direction:column;
+    color:#606060;
+    /*text-shadow: 0px 0px 3px rgba(0,0,0,0.7);*/
+    font-size:0.8em;
+}
+
+#icon {
+    max-width:90px;
+    align-self:center;
+    margin-bottom:20px;
+}
+
+ul {
+    padding:5px 0px;
+    border-top:1px solid rgba(0,0,0,0.15);
+}
+
+#inner > ul:nth-of-type(2) {
+    border-top:none;
+}
+
+ul:last-child {
+    padding-bottom:30px;
+}
+
+li {
+    padding:5px 10px;
+}
+
+ul > li:first-child {
+    font-weight:bold;
+}
+
+a,a:hover,a:focus {
+    color:inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#ededed;
+    transition:150ms;
+}
+
+#art > li:first-child {
+    color:var(--a);
+}
+
+#school > li:first-child {
+    color:var(--b);
+}
+
+#work > li:first-child {
+    color:var(--c);
+}
+
+#fun > li:first-child {
+    color:var(--d);
+}
+
