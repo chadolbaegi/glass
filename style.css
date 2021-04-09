@@ -68,6 +68,7 @@ ul {
     color:#606060 !important;
     border-color:#808080;
     transition:300ms all;
+    outline:none;
 }
 
 #center {
@@ -86,7 +87,7 @@ ul {
 #center:before {
  content:'';
  position: absolute;
- background:inherit; 
+ background:inherit;
  filter: blur(20px);
  height:inherit;
  width:inherit;
@@ -139,19 +140,18 @@ a:hover {
     transition:150ms;
 }
 
-#art > li:first-child {
+#one > li:first-child {
     color:var(--a);
 }
 
-#school > li:first-child {
+#two > li:first-child {
     color:var(--b);
 }
 
-#work > li:first-child {
+#three > li:first-child {
     color:var(--c);
 }
 
-#fun > li:first-child {
+#four > li:first-child {
     color:var(--d);
 }
-
